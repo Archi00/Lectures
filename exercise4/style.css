@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Manrope-medium';
+  src: url(Manrope/Manrope-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Manrope-light';
+  src: url(Manrope/Manrope-Light.ttf);
+}
+
+html {
+  font-family: Manrope-medium;
+  font-size: 10px;
+  color: #393939;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0 10%;
+  font-size: 1.5em;
+}
+
+img[alt='Logo'] {
+  width: 8em;
+  height: auto;
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  display: inline;
+  float: right;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 1em 2em;
+}
+
+h1 {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 6em;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+h1 ~ span {
+  font-family: Manrope-light;
+  position: absolute;
+  margin: 2.5em 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: white;
+}
+
+h1 ~ img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 0 2em 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 6em auto 0 auto;
+  font-size: 4em;
+}
+
+h3 ~ p {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 0 25%;
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2em 10% 0 10%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/*li::before {
+  content: url();
+  margin: 0 2em 0 0;
+}*/
+
+/*li::before {
+  content: url();
+  margin: 0 2em 0 0;
+}*/
+
+/*li::before {
+  content: url();
+  margin: 0 2em 0 0;
+}*/
+
+main li {
+  display: flex;
+  align-items: center;
+  margin: 2em 1em;
+  padding: 4em 0;
+  height: 1em;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+main div {
+  text-align: center;
+  margin: auto;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 0;
+}
+
+article {
+  display: inline-block;
+  max-width: 20%;
+  margin: 4em 2.5em;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 2em;
+}
+
+form {
+  display: inline-block;
+  font-size: 3.5em;
+  margin: 4em 0 2em 12%;
+  width: 50%;
+}
+
+form p {
+  font-size: 0.5em;
+  color: #414141;
+}
+
+form input {
+  border: none;
+  border-bottom: solid #393939;
+  width: 33%;
+  height: 3em;
+  color: #414141;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+form input[placeholder*='project'] {
+  width: 66.8%;
+}
+
+form button {
+  margin: 3em 0;
+  position: relative;
+  padding: 0.5em 3em;
+  left: 57%;
+  background: #4c4c4c;
+  border-radius: 2em;
+  font-size: 0.5em;
+  color: white;
+}
+
+form ~ div {
+  display: inline-block;
+  font-size: 2em;
+}
+
+form ~ div h5 {
+  font-size: 1em;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: #4c4c4c;
+  margin-top: 6em;
+  padding: 4em;
+  color: white;
+}
+
+footer ul {
+  font-size: 1.5em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+}

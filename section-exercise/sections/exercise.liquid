@@ -1,0 +1,184 @@
+{% if section.settings.image or section.settings.heading != '' or section.settings.text != '' %}
+
+  {% if section.settings.image %}
+    {% assign containerClass = "flex-container" %}
+    {% assign textWidthClass = "width-text" %}
+  {% else %}
+    {% assign containerClass = "text-container" %}
+    {% assign buttonOnText = "button-on-text" %}
+  {% endif %}
+
+  {% assign shadow = "box" %}
+  {% assign headingColor = "heading-color" %}
+  {% assign font = "font" %}
+  {% assign buttonClass = "button-class" %}
+
+  <style>
+    {% if section.settings.image_shadow == true %}
+      .box {
+        box-shadow: 0em 0em 3em 0em {{ section.settings.shadow_color }};
+      }
+    {% endif %}
+  
+    .heading-color {
+      color: {{ section.settings.font_color }};
+    }
+  
+    .font {
+      font-family: {{ section.settings.font.family }};
+    }
+  
+    .button-class {
+      border-radius: {{ section.settings.border }}%;
+      background-color: {{ section.settings.button_color }};
+      color: {{ section.settings.button_text_color }};
+    }
+  
+    .button-class:hover {
+      background-color: {{ section.settings.hover_background }};
+      color: {{ section.settings.hover_color }} !important;
+    }
+  </style>
+
+  <section>
+    {% if section.settings.product != ''%}
+	    {% for product in collections.all.products %}
+        {% if section.settings.product == product.title %}
+          <div class="{{ containerClass }}">
+          {% if product.featured_image %}
+            <img class="{{ shadow }}" src="{{ product.featured_image | img_url: 'large' }}"/>
+          {% endif %}
+            <div class="{{ textWidthClass }}">
+              {% if product.title %}
+                <h3 class="{{ headingColor }}">{{ product.title }}</h3>
+              {% endif %}
+
+              {% if product.content %}
+                <p>{{ product.content }}</p>
+              {% endif %}
+              
+              {% if product.price %}
+                <p>{{ product.price | money }}</p>
+              {% endif %}
+
+              <div class="{{ buttonOnText }}">
+                <a href="{{ product.url }}" class="custom-button {{ buttonClass }}" >Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}    
+    {% else %}
+      <div class="{{ containerClass }}">
+        {% if section.settings.image %}
+            <img class="{{ shadow }}" src="{{ section.settings.image | img_url: '320x260' }}" alt="{{ section.settings.image | escape }}"/>
+        {% endif %}
+
+        {% if section.settings.heading or section.settings.text %}
+          <div class="{{ textWidthClass }}">
+            {% if section.settings.heading %}
+              <h3 class="{{ headingColor }}">{{ section.settings.heading }}</h3>
+            {% endif %}
+
+            {% if section.settings.text %}
+              <p class="{{ font }}">{{ section.settings.text }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </section>
+
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Exercise",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_shadow",
+      "label": "Image Shadow",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Shadow Color",
+      "default": "#333333"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "font_color",
+      "label": "Font Color",
+      "default": "#333333"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Paragraph"
+    },
+    {
+      "type": "font_picker",
+      "id": "font",
+      "label": "Font",
+      "default": "work_sans_n3"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "hover_background",
+      "label": "Button Color on Hover",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Button Text Color on Hover",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "border",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "label": "Border",
+      "default": 10
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Choose a Product"
+		}
+    ],
+    "presets": [
+    {
+      "name": "Exercise",
+      "category": "Aditional info"
+    }
+    ]
+  }
+{% endschema %}   

@@ -1,0 +1,86 @@
+Por variedad: Alimentación Húmeda
+Por variedad: Alimentación Seca
+Por variedad: Snacks
+
+Por edad: Adulto
+Por edad: Cachorro
+Por edad: Esterilizados
+Por edad: Senior
+
+Por necesidades especiales: Actividad Intensa
+Por necesidades especiales: Apetito Difícil
+Por necesidades especiales: Articulaciones
+Por necesidades especiales: Bajo contenido en cereales
+Por necesidades especiales: Control de Peso
+Por necesidades especiales: Estómagos Delicados (Adultos)
+Por necesidades especiales: Estómagos Delicados (Cachorros)
+Por necesidades especiales: Estómagos Delicados (Todos)
+Por necesidades especiales: Libre de cereales (Adultos)
+Por necesidades especiales: Libre de cereales (Cachorros)
+Por necesidades especiales: Libre de cereales (Todo)
+Por necesidades especiales: Pieles sensibles (Adultos)
+Por necesidades especiales: Pieles sensibles (Cachorros)
+Por necesidades especiales: Pieles sensibles (Todos)
+Por necesidades especiales: Proteínas novedosas (Adultos)
+Por necesidades especiales: Proteínas novedosas (Cachorros)
+Por necesidades especiales: Proteínas novedosas (Todos)
+Por necesidades especiales: Sin proteína de Pollo (Adultos)
+Por necesidades especiales: Sin proteína de Pollo (Cachorros)
+Por necesidades especiales: Sin proteína de Pollo (Todos)
+
+Por tamaño: Razas Grandes
+Por tamaño: Razas medias
+Por tamaño: Razas Mini
+Por tamaño: Todas las razas
+
+Por especialidades: 01 En caldo
+Por especialidades: 02 En caldo
+Por especialidades: 03 En caldo
+Por especialidades: 04 En caldo
+Por especialidades: 05 En caldo
+Por especialidades: 06 En Gelatina
+Por especialidades: 07 En caldo
+Por especialidades: 08 En caldo
+Por especialidades: 09 En caldo
+Por especialidades: 10 En Gelatina
+Por especialidades: 11 En Gelatina
+Por especialidades: 12 En caldo
+Por especialidades: 13 En Gelatina
+Por especialidades: 14 En Gelatina
+Por especialidades: 15 En Gelatina
+Por especialidades: Adult Cat
+Por especialidades: Adult digestive
+Por especialidades: Adult Dog
+Por especialidades: Adult exigent
+Por especialidades: Adult large 
+Por especialidades: Adult mature
+Por especialidades: Adult medium
+Por especialidades: Adult mini
+Por especialidades: Adult mini digestive
+Por especialidades: Adult mini sensitive
+Por especialidades: Adult mobility
+Por especialidades: Adult obesity
+Por especialidades: Adult sensitive
+Por especialidades: Kitten
+Por especialidades: Pack Fish Gourmet
+Por especialidades: Pack Delicious Lamb
+Por especialidades: Pack Exquisite Chicken
+Por especialidades: Pack Iberian Pork
+Por especialidades: Pack Kitten
+Por especialidades: Pack Puppy Mini
+Por especialidades: Pack Puppy Rabbit
+Por especialidades: Pack Puppy Salmon
+Por especialidades: Pack Turkey Delight
+Por especialidades: Puppy digestive
+Por especialidades: Puppy large
+Por especialidades: Puppy medium
+Por especialidades: Puppy mini
+Por especialidades: Puppy sensitive
+Por especialidades: Sterilised Cat
+Por especialidades: Tuna & Sardines
+
+Coste en puntos: De 100 a 249
+Coste en puntos: De 250 a 499
+Coste en puntos: De 500 a 1000
+Coste en puntos: Más de 1000
+Coste en puntos: Menos de 100

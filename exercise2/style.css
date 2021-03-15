@@ -1,0 +1,194 @@
+header,
+.cropped,
+section,
+.footer-main {
+  max-width: 80%;
+  margin: auto;
+}
+
+header {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 12em;
+  color: #3b24bb;
+}
+
+h3 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+blockquote {
+  position: absolute;
+  top: 30%;
+  width: 55%;
+  color: white;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  float: right;
+}
+
+button > img {
+  height: 36px;
+}
+
+input {
+  height: 30px;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+}
+
+.purple-title {
+  color: #4b3bac;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+.half-title {
+  width: 50%;
+}
+
+.guide-img {
+  width: 100%;
+}
+
+.guide-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15%;
+}
+
+.button,
+.access-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.quote {
+  position: relative;
+}
+
+.quote img {
+  width: 100%;
+}
+
+.quote-content {
+  max-width: 70%;
+  margin: auto;
+}
+
+.quote-content > div {
+  font-size: 3.2em;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.access-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.footer-background {
+  display: flex;
+  background-color: #f3f3f9;
+  height: 350px;
+}
+
+.footer-main {
+  display: flex;
+  flex: 50%;
+  gap: 10%;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.description {
+  font-size: 0.8em;
+}
+
+.description p + span {
+  color: rgb(163, 158, 158);
+  font-size: 1.5em;
+}
+
+.media ul,
+.contact ul,
+.footer-main h6,
+.footer-main .logo {
+  margin-top: 0px;
+  padding: 0;
+}
+
+.media li,
+.contact li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact a {
+  color: #4b3bac;
+}
+
+.updated-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.updated > form {
+  display: block;
+  text-align: center;
+}
+
+.media-img > ul {
+  padding: 0;
+}
+
+.media-img > ul li {
+  display: inline;
+  margin-right: 10px;
+}
